@@ -1,6 +1,6 @@
 function Experience() {
   return (
-    <div className="section experience">
+    <div className="section experience" id="experience">
       <h2>_experience</h2>
       <h3>Frontend web developer @ Vortex Solution | Mar 2021 – now</h3>
       <p>Development of full custom websites with WordPress CMS and ACF Pro (Advanced Custom Fields), PHP, Sass, JS, HTML5, npm, GitLab.</p>
