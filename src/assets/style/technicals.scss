@@ -1,4 +1,65 @@
-.technical__img {
-  width: 50px;
-  height: 50px;
+.technicals {
+  .technicals__content {
+    width: 100%;
+    @include quickflex(row, space-between, center, nowrap);
+  }
+
+  .technical {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    &:hover .technical__inner,
+    &:focus .technical__inner {
+      transform: rotateY(180deg);
+
+      .technical__img {
+        opacity: 0;
+      }
+    }
+  }
+
+  .technical__inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .technical__text {
+    position: absolute;
+    z-index: 3;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $text;
+    border-radius: 50%;
+    @include quickflex(row, center, center, nowrap);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .technical__img {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    @include quickflex(row, center, center, nowrap);
+    width: 72%;
+    height: 72%;
+    object-fit: contain;
+    -o-object-fit: contain;
+    object-position: center;
+    -o-object-position: center;
+  }
 }

@@ -2,9 +2,39 @@ html {
   font-size: 62.5%; // 1rem = 10px
 }
 
+body {
+  color: $text;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: calc(100% - 20px);
+
+  @include __MIN(md) {
+    width: 90%;
+    max-width: 1400px;
+  }
+}
+
+section {
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  @include __MIN(lg) {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  @include __MIN(xl) {
+    margin-top: 88px;
+    margin-bottom: 88px;
+  }
+}
+
 h1 {
-  font-weight: 400;
-  @include font-size-fluid(2rem, 4.4rem, xxxs, xxxl);
+  font-weight: 900;
+  @include font-size-fluid(4rem, 12rem, xxxs, xxxl);
   // font-size: 3.4rem;
   // @include test(xxxs);
 }
@@ -20,6 +50,7 @@ h3 {
   font-size: 1.6rem;
 }
 
-p, span {
+p,
+span {
   font-size: 1.6rem;
 }

@@ -12,7 +12,6 @@
   }
 }
 
-
 // -------------------- Make font-size fluid (responsive).
 /// (!) Use the same unit for the min and max font-size. Either px or rem (!)
 ///
@@ -28,7 +27,12 @@
 ///
 /// @output Font-sizes before and in media queries.
 ///
-@mixin font-size-fluid($min-font-size: 1.1rem, $max-font-size: 1.6rem, $min-vw: xxxs, $max-vw: xxxl) {
+@mixin font-size-fluid(
+  $min-font-size: 1.1rem,
+  $max-font-size: 1.6rem,
+  $min-vw: xxxs,
+  $max-vw: xxxl
+) {
   $unit-min-fs: unit($min-font-size);
   $unit-max-fs: unit($max-font-size);
 
@@ -37,7 +41,15 @@
 
   ///// Verifying for errors
 
-  @if "px" != $unit-min-fs and "rem" != $unit-min-fs or "px" != $unit-max-fs and "rem" != $unit-max-fs {
+  @if "px" !=
+    $unit-min-fs and
+    "rem" !=
+    $unit-min-fs or
+    "px" !=
+    $unit-max-fs and
+    "rem" !=
+    $unit-max-fs
+  {
     // ERROR. Font-sizes must be REM or PX.
     @error 'Unit problems in font-size-fluids: Font-sizes needs to both be in either rem or px.';
   }
@@ -67,10 +79,28 @@
   font-size: $min-font-size;
 
   @include __MIN($min-vw) {
-    font-size: calc(#{$min-font-size} + #{$fs-difference} * (100vw - #{$min-vw}) / #{$vw-difference});
+    font-size: calc(
+      #{$min-font-size} + #{$fs-difference} * (100vw - #{$min-vw}) / #{$vw-difference}
+    );
   }
 
   @include __MIN($max-vw) {
     font-size: $max-font-size;
   }
+}
+
+// -------------------- Quick display flex
+// From Marc-André De Launière
+
+@mixin quickflex(
+  $dir: row,
+  $justify: space-between,
+  $align: center,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
 }

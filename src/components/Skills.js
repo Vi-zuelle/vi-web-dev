@@ -1,11 +1,14 @@
 function Skills() {
   return (
-    <div className="section skills" id="skills">
+    <section className="container skills" id="skills">
       <h2>_skills</h2>
       <p>Problem solving and analytical - Improvement-seeking.</p>
-      <p>Team player - Attentive - Authentic - Transparent - Customer oriented - Organized - Involved - Positive - Autonomous - Goal focused.</p>
-    </div>
-  )
+      <p>
+        Team player - Attentive - Authentic - Transparent - Customer oriented -
+        Organized - Involved - Positive - Autonomous - Goal focused.
+      </p>
+    </section>
+  );
 }
 
 export default Skills;
