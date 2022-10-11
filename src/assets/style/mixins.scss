@@ -104,3 +104,48 @@
   align-items: $align;
   flex-wrap: $wrap;
 }
+
+@mixin sct-padding() {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include __MIN(lg) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @include __MIN(xl) {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+}
+
+@mixin sct-padding-sm() {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include __MIN(lg) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @include __MIN(xl) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@mixin sct-margin() {
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  @include __MIN(lg) {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  @include __MIN(xl) {
+    margin-top: 88px;
+    margin-bottom: 88px;
+  }
+}

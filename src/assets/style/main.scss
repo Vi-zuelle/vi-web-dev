@@ -1,6 +1,6 @@
 // -------------------- Variables
 @import "./smart-variables.scss";
-// -------------------- Mixins and functions
+// -------------------- Mixins & functions
 @import "./functions.scss";
 @import "./mixins.scss";
 // -------------------- Common
@@ -8,9 +8,11 @@
 @import "./fonts.scss";
 @import "./colors.scss";
 @import "./general.scss";
-// -------------------- Pages
+@import "./star.scss";
+// -------------------- Pages & sections
 @import "./index.scss";
 @import "./App.scss";
-@import "./footer.scss";
 @import "./header.scss";
 @import "./technicals.scss";
+@import "./contact.scss";
+@import "./footer.scss";

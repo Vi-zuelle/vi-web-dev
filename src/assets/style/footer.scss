@@ -1,4 +1,55 @@
 footer {
   width: 100%;
-  border: 1px solid #CFFF8D;
+  color: #fff;
+  background-image: url("../img/jacques-cartier.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include __MIN(lg) {
+    padding-top: 32px;
+    // padding-bottom: 32px;
+  }
+
+  @include __MIN(xl) {
+    padding-top: 40px;
+    // padding-bottom: 40px;
+  }
+
+  .footer__contact {
+    .contact__content {
+      // color: #fff;
+      @include quickflex(column, center, center, nowrap);
+    }
+    .contact__links {
+      @include quickflex(row, center, center, nowrap);
+    }
+
+    .contact__link {
+      &:not(:last-child) {
+        margin-right: 1.4rem;
+      }
+    }
+  }
+
+  .footer__message {
+    margin-top: 24px;
+    @include quickflex(row, center, center, nowrap);
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .react:before {
+      background-color: $primary;
+    }
+
+    .love:before {
+      background-color: $secondary;
+    }
+  }
 }

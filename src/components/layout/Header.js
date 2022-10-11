@@ -7,19 +7,29 @@ function Header() {
       <nav className="navbar">
         <ul>
           <li className="nav-item">
-            <NavLink to="/#skills">Skills</NavLink>
+            <span className="link-wrapper">
+              <NavLink to="/#skills">Skills</NavLink>
+            </span>
           </li>
           <li className="nav-item">
-            <NavLink to="/#experience">Experience</NavLink>
+            <span className="link-wrapper">
+              <NavLink to="/#experience">Experience</NavLink>
+            </span>
           </li>
           <li className="nav-item">
-            <NavLink to="/#technicals">Technicals</NavLink>
+            <span className="link-wrapper">
+              <NavLink to="/#technicals">Technicals</NavLink>
+            </span>
           </li>
           <li className="nav-item">
-            <NavLink to="/know-more">Know me more</NavLink>
+            <span className="link-wrapper">
+              <NavLink to="/know-more">Know me more</NavLink>
+            </span>
           </li>
           <li className="nav-item">
-            <NavLink to="/contact-me">Contact me</NavLink>
+            <span className="link-wrapper">
+              <NavLink to="/contact-me">Contact me</NavLink>
+            </span>
           </li>
         </ul>
       </nav>
