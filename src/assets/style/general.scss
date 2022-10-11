@@ -4,7 +4,9 @@ html {
 
 h1 {
   font-weight: 400;
-  font-size: 3.4rem;
+  @include font-size-fluid(2rem, 4.4rem, xxxs, xxxl);
+  // font-size: 3.4rem;
+  // @include test(xxxs);
 }
 
 h2 {

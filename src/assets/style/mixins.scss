@@ -1,0 +1,76 @@
+// -------------------- Quick use of min-width media query - usable with the smart-breakpoints
+// Inspired from Marc-André De Launière
+///
+/// @param {Number|String} $breakpoint - Can either be a breakpoint name or a number in pixel.
+///
+@mixin __MIN($breakpoint) {
+  $breakpoint-value: get-smart-breakpoint($breakpoint);
+  @debug $breakpoint-value;
+
+  @media (min-width: $breakpoint-value) {
+    @content;
+  }
+}
+
+
+// -------------------- Make font-size fluid (responsive).
+/// (!) Use the same unit for the min and max font-size. Either px or rem (!)
+///
+/// @link https://css-tricks.com/snippets/css/fluid-typography/
+/// And made in collaboration of Marc-André Delaudière
+///
+/// @param {number} $min-font-size - Font-size when viewport has width lower than $min-vw.
+///                                  Use only px or rem and match it with $max-font-size.
+/// @param {number} $max-font-size - Font-size when viewport has width higher than $max-vw.
+///                                  Use only px or rem and match it with $min-font-size.
+/// @param {string|number} $min-vw - A breakpoint size or a smart-breakpoint string. Use px
+/// @param {string|number} $max-vw - A breakpoint size or a smart-breakpoint string. Use px
+///
+/// @output Font-sizes before and in media queries.
+///
+@mixin font-size-fluid($min-font-size: 1.1rem, $max-font-size: 1.6rem, $min-vw: xxxs, $max-vw: xxxl) {
+  $unit-min-fs: unit($min-font-size);
+  $unit-max-fs: unit($max-font-size);
+
+  $min-vw: get-smart-breakpoint($min-vw);
+  $max-vw: get-smart-breakpoint($max-vw);
+
+  ///// Verifying for errors
+
+  @if "px" != $unit-min-fs and "rem" != $unit-min-fs or "px" != $unit-max-fs and "rem" != $unit-max-fs {
+    // ERROR. Font-sizes must be REM or PX.
+    @error 'Unit problems in font-size-fluids: Font-sizes needs to both be in either rem or px.';
+  }
+
+  @if $unit-min-fs != $unit-max-fs {
+    // ERROR. Font-sizes must be the same unit.
+    @error 'Unit problems in font-size-fluids: Font-sizes needs to be the same type (rem or px).';
+  }
+
+  @if "px" != unit($min-vw) or "px" != unit($max-vw) {
+    // ERROR. Breakpoints must be in pixels.
+    @error 'Unit problems in font-size-fluids: Breakpoints min-vw and max-vw must be in px.';
+  }
+
+  ///// Calculations
+
+  $fs-difference: strip-unit($max-font-size - $min-font-size);
+
+  $vw-difference: strip-unit($max-vw - $min-vw);
+  @if "rem" == unit($min-font-size) {
+    // Keep ratio with the breakpoints difference if the min font-size is in rem. (html { font-size: 62.5% })
+    $vw-difference: calc($vw-difference / 10);
+  }
+
+  ///// Start Output
+
+  font-size: $min-font-size;
+
+  @include __MIN($min-vw) {
+    font-size: calc(#{$min-font-size} + #{$fs-difference} * (100vw - #{$min-vw}) / #{$vw-difference});
+  }
+
+  @include __MIN($max-vw) {
+    font-size: $max-font-size;
+  }
+}

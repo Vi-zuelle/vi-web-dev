@@ -1,14 +1,15 @@
-import Link from {react-router-dom};
+import { NavHashLink as NavLink } from "react-router-hash-link";
 
 function Header() {
   return(
     <header className="header">
       <nav className="navbar">
         <ul>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#technicals">Technicals</a></li>
-          <li><Link to="/more">Know me more</Link></li>
+          <li><NavLink to="/#skills">Skills</NavLink></li>
+          <li><NavLink to="/#experience">Experience</NavLink></li>
+          <li><NavLink to="/#technicals">Technicals</NavLink></li>
+          <li><NavLink to="/know-more">Know me more</NavLink></li>
+          <li><NavLink to="/contact-me">Contact me</NavLink></li>
         </ul>
       </nav>
       <h1>Hello, I'm Vi</h1>

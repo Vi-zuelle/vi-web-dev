@@ -1,6 +1,14 @@
+@import './reset.scss';
+@import './smart-variables.scss';
+// -------------------- Mixins and functions
+@import './functions.scss';
+@import './mixins.scss';
+// -------------------- Common
 @import './fonts.scss';
+@import './colors.scss';
 @import './general.scss';
-@import './mixin.scss';
-@import './App.scss';
+// -------------------- Pages
 @import './index.scss';
+@import './App.scss';
+@import './footer.scss';
 @import './technicals.scss';

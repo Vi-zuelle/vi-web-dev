@@ -1,0 +1,22 @@
+// -------------------- Get the smart breakpoint
+// Inspired from Marc-André De Launière
+@function get-smart-breakpoint($size) {
+
+  $value: map-get($smart-breakpoints, $size);
+  @if not $value {
+    $value: $size;
+  }
+
+  @return $value;
+}
+
+// -------------------- Strip the units from a number
+/// @link https://stackoverflow.com/questions/12328259/how-do-you-strip-the-unit-from-any-number-in-sass
+
+/// @param {Number} $number
+
+/// @return {Number} A unitless number
+
+@function strip-unit($number) {
+  @return $number / ($number * 0 + 1);
+}
