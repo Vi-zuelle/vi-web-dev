@@ -1,0 +1,40 @@
+.contact {
+  @include sct-margin;
+  @include quickflex(column, center, flex-start, nowrap);
+  text-align: center;
+
+  .contact-form__wrapper {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    @include sct-margin-sm;
+
+    @include __MIN(lg) {
+      max-width: 50vw;
+    }
+  }
+
+  .contact-form__input {
+    width: 100%;
+    margin-bottom: 16px;
+    min-height: 40px;
+    padding: 8px;
+    font-family: "Mulish", sans-serif;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $primary;
+      border-radius: 2px;
+    }
+  }
+
+  .contact-form__msg {
+    min-height: 56px;
+    font-family: "Mulish", sans-serif;
+  }
+
+  input::placeholder,
+  input::-webkit-input-placeholder {
+    // font-family: "Mulish", sans-serif;
+  }
+}

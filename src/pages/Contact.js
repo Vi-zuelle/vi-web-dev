@@ -43,42 +43,44 @@ function ContactPage() {
 
   return (
     <div className="contact">
-      <h2>Contact me</h2>
+      <div className="contact__content container">
+        <h2>_Contact me</h2>
 
-      <p>
-        This contact form does not keep any of your data. Its unique role is to
-        send me an email.
-      </p>
+        <p>
+          This contact form does not keep any of your data. Its unique role is
+          to send me an email.
+        </p>
 
-      <div className="contact-form__wrapper">
-        <form id="contact-form" onSubmit={handleSubmit}>
-          <input
-            className="contact-form__input contact-form__name"
-            type="text"
-            placeholder="Your Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <input
-            className="contact-form__input contact-form__email"
-            type="email"
-            placeholder="Your email address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <textarea
-            className="contact-form__input contact-form__msg"
-            placeholder="Your message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-          <button className="contact-form__btn" type="submit">
-            Send
-          </button>
-          <span className={emailSent ? "visible" : null}>
-            Thank you for your message, I will be in touch in no time!
-          </span>
-        </form>
+        <div className="contact-form__wrapper">
+          <form id="contact-form" onSubmit={handleSubmit}>
+            <input
+              className="contact-form__input contact-form__name"
+              type="text"
+              placeholder="Your Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              className="contact-form__input contact-form__email"
+              type="email"
+              placeholder="Your email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <textarea
+              className="contact-form__input contact-form__msg"
+              placeholder="Your message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+            <button className="contact-form__btn btn" type="submit">
+              Send
+            </button>
+            <span className={emailSent ? "visible" : null}>
+              Thank you for your message, I will be in touch in no time!
+            </span>
+          </form>
+        </div>
       </div>
     </div>
   );
