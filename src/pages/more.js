@@ -19,17 +19,16 @@ const MorePage = () => {
 
       <div className="more__values">
         <div className="more__value-wrapper">
-          <div className="more__value__text"></div>
-          <div class="bubble x1">Transparent</div>
-          <div class="bubble x2">Curious</div>
-          <div class="bubble x3">Benevolent</div>
-          <div class="bubble x4">Creative</div>
-          <div class="bubble x5">Logic</div>
-          <div class="bubble x6"></div>
-          <div class="bubble x7"></div>
-          <div class="bubble x8"></div>
-          <div class="bubble x9"></div>
-          <div class="bubble x10"></div>
+          <div class="bubble x1">transparent</div>
+          <div class="bubble x2">curious</div>
+          <div class="bubble x3">attentive</div>
+          <div class="bubble x4">creative</div>
+          <div class="bubble x5">logic</div>
+          <div class="bubble x6">team player</div>
+          <div class="bubble x7">authentic</div>
+          <div class="bubble x8">involved</div>
+          <div class="bubble x9">positive</div>
+          <div class="bubble x10">autonomous</div>
         </div>
 
         {/* <div className="bubble--text x1 more__value-wrapper">
