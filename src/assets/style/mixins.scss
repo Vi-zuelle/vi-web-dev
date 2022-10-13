@@ -164,3 +164,87 @@
     margin-bottom: 40px;
   }
 }
+
+// -------------------- Links
+@mixin link-wrapper($bg-color: $text) {
+  position: relative;
+  z-index: 9;
+
+  &:before {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: $bg-color;
+    transition: height ease-in-out 1s;
+  }
+
+  &:hover,
+  &:focus {
+    > a {
+      filter: invert(1);
+    }
+  }
+
+  &:hover:before,
+  &:focus:before {
+    height: 100%;
+  }
+
+  > a {
+    font-weight: 400;
+    transition: all ease-in-out 1s;
+  }
+
+  & a.active {
+    // background-color: $primary;
+  }
+}
+
+// -------------------- END Links
+
+// -------------------- Buttons
+@mixin btn(
+  $color: #000,
+  $bg-color: #fff,
+  $border: #000,
+  $color-hover: #fff,
+  $bg-color-hover: #000
+) {
+  position: relative;
+  z-index: 9;
+  padding: 12px 24px;
+  // border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  background-color: $bg-color;
+  color: $color;
+  transition: all ease-in-out 1s;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    background-color: $bg-color-hover;
+    height: 8px;
+    min-height: 0;
+    width: 110%;
+    transition: all ease-in-out 1s;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-hover;
+
+    &:before {
+      height: 110%;
+      min-height: 110%;
+    }
+  }
+}
+// -------------------- END Buttons

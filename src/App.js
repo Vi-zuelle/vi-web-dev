@@ -4,7 +4,7 @@ import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import More from "./pages/More";
 import Contact from "./pages/Contact";
-import Stars from "./components/layout/Stars";
+
 import "./assets/style/App.scss";
 
 function App() {
@@ -19,7 +19,6 @@ function App() {
         </Routes>
       </div>
       <Footer />
-      <Stars />
     </div>
   );
 }

@@ -1,5 +1,9 @@
+body.contact-layout {
+  color: #fff;
+}
+
 .header {
-  height: 200px;
+  height: 40px;
 
   .navbar {
     height: 40px;
@@ -12,27 +16,6 @@
     .nav-item {
       text-transform: uppercase;
       margin-left: 1.4rem;
-      // color: $text;
-    }
-  }
-
-  $size: 20px;
-
-  h1 {
-    background-image: url("../img/jacques-cartier.jpg");
-    background-repeat: repeat;
-    background-position: bottom;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: $size $size;
-    background-position: 0 0;
-    animation: bg-anim 6s linear infinite;
-  }
-
-  @keyframes bg-anim {
-    100% {
-      background-position: $size 0, $size 0, $size 0;
     }
   }
 }

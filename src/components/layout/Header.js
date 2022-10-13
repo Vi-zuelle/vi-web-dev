@@ -33,7 +33,7 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <h1>Hello, I'm Vi</h1>
+      {/* <h1>Hello, I'm Vi</h1> */}
     </header>
   );
 }

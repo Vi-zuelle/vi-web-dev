@@ -1,16 +1,20 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { useEffect } from "react";
+import Stars from "../components/layout/Stars";
 
-function ContactPage() {
+const ContactPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [emailSent, setEmailSent] = useState(false);
 
-  // const isValidEmail = email => {
-  //   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  //   return regex.test(String(email).toLowerCase());
-  // };
+  useEffect(() => {
+    document.body.classList.add("contact-layout");
+    return () => {
+      document.body.classList.remove("contact-layout");
+    };
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,12 +48,14 @@ function ContactPage() {
   return (
     <div className="contact">
       <div className="contact__content container">
-        <h2>_Contact me</h2>
+        <div className="contact__text">
+          <h2>_Contact me</h2>
 
-        <p>
-          This contact form does not keep any of your data. Its unique role is
-          to send me an email.
-        </p>
+          <p>
+            This contact form does not keep any of your data. Its unique role is
+            to send me an email.
+          </p>
+        </div>
 
         <div className="contact-form__wrapper">
           <form id="contact-form" onSubmit={handleSubmit}>
@@ -74,16 +80,19 @@ function ContactPage() {
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
             <button className="contact-form__btn btn" type="submit">
-              Send
+              SEND
             </button>
-            <span className={emailSent ? "visible" : null}>
-              Thank you for your message, I will be in touch in no time!
-            </span>
+            <div className="contact-form__confirmation-wrapper">
+              <span className={emailSent ? "visible" : null}>
+                Thank you for your message, I will be in touch in no time!
+              </span>
+            </div>
           </form>
         </div>
       </div>
+      <Stars />
     </div>
   );
-}
+};
 
 export default ContactPage;

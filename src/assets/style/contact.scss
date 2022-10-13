@@ -1,7 +1,19 @@
+body.contact-layout {
+  background-color: $dark;
+
+  .link-wrapper {
+    @include link-wrapper(#fff);
+  }
+}
+
 .contact {
   @include sct-margin;
   @include quickflex(column, center, flex-start, nowrap);
   text-align: center;
+
+  .contact__text {
+    color: #fff;
+  }
 
   .contact-form__wrapper {
     width: 100%;
@@ -12,6 +24,10 @@
     @include __MIN(lg) {
       max-width: 50vw;
     }
+  }
+
+  #contact-form {
+    @include quickflex(column, center, center, nowrap);
   }
 
   .contact-form__input {
@@ -36,5 +52,21 @@
   input::placeholder,
   input::-webkit-input-placeholder {
     // font-family: "Mulish", sans-serif;
+  }
+
+  .contact-form__btn {
+    margin-top: 16px;
+  }
+
+  .contact-form__confirmation-wrapper {
+    margin-top: 16px;
+
+    > span {
+      visibility: hidden;
+
+      &.visible {
+        visibility: visible;
+      }
+    }
   }
 }

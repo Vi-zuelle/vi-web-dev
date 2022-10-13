@@ -7,6 +7,8 @@ footer {
   background-size: cover;
   padding-top: 16px;
   padding-bottom: 16px;
+  position: relative;
+  z-index: 999;
 
   @include __MIN(lg) {
     padding-top: 32px;
