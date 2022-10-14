@@ -20,6 +20,8 @@ body.contact-layout {
     margin-right: auto;
     margin-left: auto;
     @include sct-margin-sm;
+    position: relative;
+    z-index: 99;
 
     @include __MIN(lg) {
       max-width: 50vw;
