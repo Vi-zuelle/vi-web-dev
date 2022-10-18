@@ -1,3 +1,5 @@
+import React from "react";
+
 function Technical(props) {
   return (
     <div className="technical">
