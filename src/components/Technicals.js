@@ -1,4 +1,3 @@
-import React from "react";
 import Technical from "./Technical";
 
 function Technicals() {

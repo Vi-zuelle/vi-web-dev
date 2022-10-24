@@ -1,4 +1,3 @@
-// import React from "react";
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import Stars from "../components/layout/Stars";
