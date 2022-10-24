@@ -26,6 +26,7 @@ function Footer() {
             href="https://en.wikipedia.org/wiki/Love"
             target="_blank"
             className="love ext-link"
+            rel="noreferrer"
           >
             love
           </a>{" "}
@@ -34,6 +35,7 @@ function Footer() {
             href="https://reactjs.org/"
             target="_blank"
             className="react ext-link"
+            rel="noreferrer"
           >
             React
           </a>
