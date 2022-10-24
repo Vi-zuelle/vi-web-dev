@@ -1,7 +1,6 @@
-import React from "react";
-import { useState } from "react";
+// import React from "react";
+import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
-import { useEffect } from "react";
 import Stars from "../components/layout/Stars";
 
 const ContactPage = () => {

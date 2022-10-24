@@ -1,13 +1,14 @@
-import React from "react";
+// import React from "react";
 import { useEffect } from "react";
 
 const MorePage = () => {
   useEffect(() => {
     document.body.classList.add("more-layout");
     return () => {
-      document.body.remove("more-layout");
+      document.body.classList.remove("more-layout");
     };
-  }, []);
+  });
+
   return (
     <div className="more container">
       <div className="more__content">
@@ -38,16 +39,16 @@ const MorePage = () => {
 
       <div className="more__values">
         <div className="more__value-wrapper">
-          <div class="bubble x1">transparent</div>
-          <div class="bubble x2">curious</div>
-          <div class="bubble x3">attentive</div>
-          <div class="bubble x4">creative</div>
-          <div class="bubble x5">logic</div>
-          <div class="bubble x6">team player</div>
-          <div class="bubble x7">authentic</div>
-          <div class="bubble x8">involved</div>
-          <div class="bubble x9">positive</div>
-          <div class="bubble x10">autonomous</div>
+          <div className="bubble x1">transparent</div>
+          <div className="bubble x2">curious</div>
+          <div className="bubble x3">attentive</div>
+          <div className="bubble x4">creative</div>
+          <div className="bubble x5">logic</div>
+          <div className="bubble x6">team player</div>
+          <div className="bubble x7">authentic</div>
+          <div className="bubble x8">involved</div>
+          <div className="bubble x9">positive</div>
+          <div className="bubble x10">autonomous</div>
         </div>
 
         {/* <div className="bubble--text x1 more__value-wrapper">

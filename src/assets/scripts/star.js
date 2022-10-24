@@ -20,7 +20,7 @@ loop = {
   newStar: function () {
     var d = document.createElement("div");
     d.innerHTML =
-      '<figure class="star"><figure class="star-top"></figure><figure class="star-bottom"></figure></figure>';
+      '<figure className="star"><figure className="star-top"></figure><figure className="star-bottom"></figure></figure>';
     return d.firstChild;
   },
 };
