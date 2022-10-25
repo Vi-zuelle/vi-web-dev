@@ -1,0 +1,182 @@
+// -------------------- Variables
+$bp: 650px;
+// -------------------- END Variables
+
+// -------------------- MOBILE
+.nav-mobile {
+  display: block;
+
+  .navbar {
+    display: none;
+
+    // position: fixed;
+    z-index: 999;
+    // top: -100%;
+    // right: 0;
+    // height: 100%;
+    // width: 100%;
+    // background-color: $primary;
+    opacity: 0;
+    transition: all 0.35s ease;
+
+    ul {
+      @include quickflex(column, flex-start, flex-start, nowrap);
+    }
+  }
+
+  .menu-bg,
+  .navbar {
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    // width: 0;
+    // height: 0;
+    width: 520px;
+    height: 460px;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, $primary, $primary);
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transform: scale(0.1);
+    transition: all 0.3s ease;
+  }
+
+  &.menuOpened {
+    .navbar {
+      display: block;
+      opacity: 1;
+    }
+
+    .menu-bg {
+      display: block;
+      // transform: scale(1);
+      // width: 520px;
+      // height: 460px;
+      transform: scale(1) translate(170px, -120px);
+    }
+  }
+
+  .nav-item {
+    margin-top: 16px;
+  }
+}
+
+// -------------------- Burger button
+#menu-bar {
+  position: relative;
+  z-index: 999;
+  width: 45px;
+  // height: 40px;
+  margin: 40px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #000;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+
+  &.menuOpened {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+}
+
+#bar2.menuOpened {
+  opacity: 0;
+}
+
+#bar3 {
+  transform: translateY(4px);
+
+  &.menuOpened {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+}
+
+#menu-bar.menuOpened {
+  #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  #bar2 {
+    opacity: 0;
+  }
+
+  #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+}
+// .nav-burger {
+//   display: block;
+//   position: relative;
+//   cursor: pointer;
+
+//   @include __MIN($bp) {
+//     display: none;
+//   }
+// }
+
+// .nav-burger:before,
+// .nav-burger:after {
+//   content: "";
+//   position: absolute;
+// }
+
+// .nav-burger,
+// .nav-burger:before,
+// .nav-burger:after {
+//   background-color: #000;
+//   height: 4px;
+//   width: 30px;
+//   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+//   border-radius: 2px;
+// }
+
+// .nav-burger:before {
+//   margin-top: -8px;
+// }
+
+// .nav-burger:after {
+//   margin-top: 8px;
+// }
+
+// -------------------- Desktop
+.nav-desktop {
+  display: none;
+
+  .navbar {
+    height: 40px;
+    font-size: 1.4rem;
+
+    ul {
+      @include quickflex(row, flex-end, center, nowrap);
+    }
+  }
+}
+
+@include __MIN($bp) {
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: block;
+  }
+}
+
+// -------------------- Common
+.nav-item {
+  text-transform: uppercase;
+  margin-left: 1.4rem;
+}
