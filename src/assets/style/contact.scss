@@ -1,7 +1,7 @@
 body.contact-layout {
   background-color: $dark;
 
-  .link-wrapper {
+  .nav-desktop .link-wrapper {
     @include link-wrapper(#fff);
   }
 }

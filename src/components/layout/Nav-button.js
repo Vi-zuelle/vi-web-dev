@@ -30,6 +30,12 @@ function NavButton() {
       <div id="bar1" className="bar"></div>
       <div id="bar2" className="bar"></div>
       <div id="bar3" className="bar"></div>
+      <div
+        className="menu-overlay"
+        id="menu-bg"
+        onClick={handleMenuOpened}
+      ></div>
+      <div className="menu-bg" id="menu-bg" onClick={handleMenuOpened}></div>
     </div>
   );
 }
