@@ -4,6 +4,9 @@ html {
 
 body {
   color: $text;
+  * {
+    box-sizing: border-box;
+  }
 }
 
 .App {
@@ -12,6 +15,7 @@ body {
 
 .content {
   height: 100%;
+  padding-bottom: 200px;
 }
 
 .container {

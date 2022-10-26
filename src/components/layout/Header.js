@@ -1,41 +1,26 @@
-import { NavHashLink as NavLink } from "react-router-hash-link";
+// import { NavHashLink as NavLink } from "react-router-hash-link";
+import { ReactComponent as Logo } from "../../assets/img/logo-vi-blackfill.svg";
+// import { useState } from "react";
+import { Link } from "react-router-dom";
+import NavDesktop from "./Nav-desktop";
+import NavMobile from "./Nav-mobile";
 
-function Header() {
+const Header = () => {
   return (
     <header className="header container">
-      {/* <img src={require(`../../assets/img/jacques-cartier.jpg`)} alt="" /> */}
-      <nav className="navbar">
-        <ul>
-          <li className="nav-item">
-            <span className="link-wrapper">
-              <NavLink to="/#skills">Skills</NavLink>
-            </span>
-          </li>
-          <li className="nav-item">
-            <span className="link-wrapper">
-              <NavLink to="/#experience">Experience</NavLink>
-            </span>
-          </li>
-          <li className="nav-item">
-            <span className="link-wrapper">
-              <NavLink to="/#technicals">Technicals</NavLink>
-            </span>
-          </li>
-          <li className="nav-item">
-            <span className="link-wrapper">
-              <NavLink to="/know-more">Know me more</NavLink>
-            </span>
-          </li>
-          <li className="nav-item">
-            <span className="link-wrapper">
-              <NavLink to="/contact-me">Contact me</NavLink>
-            </span>
-          </li>
-        </ul>
-      </nav>
-      {/* <h1>Hello, I'm Vi</h1> */}
+      <div className="logo-wrapper">
+        <Link to="/">
+          <div className="logo">
+            <Logo />
+          </div>
+        </Link>
+      </div>
+      <div className="header-nav">
+        <NavDesktop />
+        <NavMobile />
+      </div>
     </header>
   );
-}
+};
 
 export default Header;
