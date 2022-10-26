@@ -65,7 +65,7 @@ $bp: 700px;
   border: 1px solid #fff;
 }
 
-#menu-bar.menuOpened {
+.nav-mobile.menuOpened {
   .menu-bg {
     display: block;
     transform: scale(1);
@@ -85,7 +85,7 @@ $bp: 700px;
 // -------------------- Burger button
 #menu-bar {
   position: relative;
-  z-index: 999;
+  z-index: 9999;
   width: 45px;
   margin: 40px 0 20px 20px;
   cursor: pointer;

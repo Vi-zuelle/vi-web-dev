@@ -4,6 +4,10 @@ body.contact-layout {
   .nav-desktop .link-wrapper {
     @include link-wrapper(#fff);
   }
+
+  .header .logo-wrapper .logo {
+    fill: #fff;
+  }
 }
 
 .contact {
@@ -13,6 +17,11 @@ body.contact-layout {
 
   .contact__text {
     color: #fff;
+
+    p {
+      font-style: italic;
+      font-size: 1.4rem;
+    }
   }
 
   .contact-form__wrapper {

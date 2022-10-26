@@ -14,13 +14,13 @@ body.contact-layout {
 }
 
 .header {
-  height: 40px;
+  height: 80px;
   @include quickflex(row, space-between, center, nowrap);
   position: relative;
   z-index: 9999;
 
   .logo-wrapper {
-    margin-top: 20px;
+    // margin-top: 20px;
     width: $w-logo-sm;
     height: $w-logo-sm;
     cursor: pointer;
@@ -28,7 +28,7 @@ body.contact-layout {
 
     @include __MIN($bp) {
       position: fixed;
-      top: 20px;
+      top: 8px;
       left: 40px;
       width: $w-logo-lg;
       height: $w-logo-lg;
