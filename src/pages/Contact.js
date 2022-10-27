@@ -22,7 +22,6 @@ const ContactPage = () => {
     );
 
     if (name && email && message) {
-      // TODO - send mail
       const serviceId = "service_q734d2r";
       const templateId = "template_4ig10v5";
       const userId = "HhtCrFR-z_788FWjk";
