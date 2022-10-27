@@ -4,10 +4,8 @@
   width: 1px;
   height: 1px;
   border-radius: 50%;
-  // background-color: #f3e86f;
   background-color: $primary;
   box-shadow: 0px 0px 2px 2px $primary; /* x offset, y offset, blur size, spread size, color */
-  // animation: blink 6s ease-in-out infinite;
   animation: scale 6s ease-in-out infinite;
 
   @keyframes scale {
@@ -25,34 +23,16 @@
     }
   }
 
-  // @keyframes blink{
-  //   0%{opacity: 0.1;}
-  //   50%{opacity: .5;}
-  //   100%{opacity: 1;}
-  // }
-
   &:nth-child(2n) {
-    // animation: blink 7s ease-in-out infinite;
     animation: scale 7s ease-in-out infinite;
     background-color: $secondary;
     box-shadow: 0px 0px 2px 2px $secondary; /* x offset, y offset, blur size, spread size, color */
-    // @keyframes blink{
-    //   0%{opacity: 0;}
-    //   50%{opacity: .5;}
-    //   100%{opacity: 1;}
-    // }
   }
 
   &:nth-child(3n) {
     background-color: $primary;
     box-shadow: 0px 0px 1px 1px $primary; /* x offset, y offset, blur size, spread size, color */
-    // animation: blink 8s ease-in-out infinite;
     animation: scale 8s ease-in-out infinite;
-    // @keyframes blink{
-    //   0%{opacity: 0;}
-    //   70%{opacity: .5;}
-    //   100%{opacity: 1;}
-    // }
   }
 
   &:nth-child(5n) {

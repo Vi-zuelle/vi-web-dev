@@ -5,14 +5,6 @@ $w-logo-lg: 60px;
 $bp: lg;
 // -------------------- END Variables
 
-body.contact-layout {
-  color: #fff;
-
-  .nav-mobile {
-    color: $text;
-  }
-}
-
 .header {
   height: 80px;
   @include quickflex(row, space-between, center, nowrap);
@@ -20,15 +12,14 @@ body.contact-layout {
   z-index: 9999;
 
   .logo-wrapper {
-    // margin-top: 20px;
     width: $w-logo-sm;
     height: $w-logo-sm;
     cursor: pointer;
     z-index: 9999;
 
     @include __MIN($bp) {
-      position: fixed;
-      top: 8px;
+      position: sticky;
+      top: 16px;
       left: 40px;
       width: $w-logo-lg;
       height: $w-logo-lg;

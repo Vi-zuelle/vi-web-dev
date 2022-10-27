@@ -17,23 +17,42 @@ const MorePage = () => {
           human you might hire.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          I started my "real" work life as a data analyst until I decided to own
+          the geek part of me. That is how, end of 2019 I had been through a
+          coding bootcamp of 9 intensive and wonderful weeks &#64; &nbsp;
+          <a
+            href="https://www.lewagon.com/montreal"
+            target="_blank"
+            rel="noreferrer"
+            className="ext-link"
+          >
+            Le&nbsp;Wagon
+          </a>
+          . (If you find me on the picture, I owe you a free hug) In 2020 I got
+          small jobs there and there. Until I got hired in March 2021 &#64;
+          &nbsp;
+          <a
+            href="https://www.vortexsolution.com/en/"
+            target="_blank"
+            rel="noreferrer"
+            className="ext-link"
+          >
+            Vortex&nbsp;Solution
+          </a>
+          . Since then, I live a great life with amazing colleagues in a family
+          ambiance.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          I don't really know how to describe me, but it I have to do so, I
+          would go by my values. My fundamental values are : honesty,
+          transparency, authenticity, kindness, attentiveness, fairness. I try
+          my best to be all that!
         </p>
+        <p>
+          Also I think I am kind of logic, curious, involved, team player,
+          positive, autonomous, and creative.
+        </p>
+        <p>You don't believe me? Let's talk!</p>
       </div>
 
       <div className="more__values">
@@ -42,29 +61,13 @@ const MorePage = () => {
           <div className="bubble x2">curious</div>
           <div className="bubble x3">attentive</div>
           <div className="bubble x4">creative</div>
-          <div className="bubble x5">logic</div>
+          <div className="bubble x5">kind</div>
           <div className="bubble x6">team player</div>
           <div className="bubble x7">authentic</div>
           <div className="bubble x8">involved</div>
           <div className="bubble x9">positive</div>
           <div className="bubble x10">autonomous</div>
         </div>
-
-        {/* <div className="bubble--text x1 more__value-wrapper">
-          <div className="more__value__text">Curious</div>
-        </div>
-
-        <div className="more__value-wrapper">
-          <div className="more__value__text">Benevolent</div>
-        </div>
-
-        <div className="more__value-wrapper">
-          <div className="more__value__text">Curious</div>
-        </div>
-
-        <div className="more__value-wrapper">
-          <div className="more__value__text">Curious</div>
-        </div> */}
       </div>
     </div>
   );

@@ -16,14 +16,12 @@ const NavMobile = () => {
       if (navMobile.classList.contains("menuOpened")) {
         navMobile.classList.remove("menuOpened");
       }
-      console.log("CLICK");
     } else {
       setMenuOpened("menuOpened");
 
       if (!navMobile.classList.contains("menuOpened")) {
         navMobile.classList.add("menuOpened");
       }
-      console.log("CLICK");
     }
   };
 

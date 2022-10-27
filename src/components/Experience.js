@@ -1,4 +1,4 @@
-function Experience() {
+const Experience = () => {
   return (
     <section className="container experience" id="experience">
       <h2>_experience</h2>
@@ -26,6 +26,6 @@ function Experience() {
       </p>
     </section>
   );
-}
+};
 
 export default Experience;

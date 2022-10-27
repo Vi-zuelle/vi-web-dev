@@ -6,17 +6,17 @@ const Nav = (props) => {
       <ul>
         <li onClick={props.onClick} className="nav-item">
           <span className="link-wrapper">
-            <NavLink to="/#skills">Skills</NavLink>
+            <NavLink to="/#skills">#Skills</NavLink>
           </span>
         </li>
         <li onClick={props.onClick} className="nav-item">
           <span className="link-wrapper">
-            <NavLink to="/#experience">Experience</NavLink>
+            <NavLink to="/#experience">#Experience</NavLink>
           </span>
         </li>
         <li onClick={props.onClick} className="nav-item">
           <span className="link-wrapper">
-            <NavLink to="/#technicals">Technicals</NavLink>
+            <NavLink to="/#technicals">#Technicals</NavLink>
           </span>
         </li>
         <li onClick={props.onClick} className="nav-item">

@@ -1,4 +1,4 @@
-function Intro() {
+const Intro = () => {
   return (
     <section className="container intro">
       <p>I am a happy web developer</p>
@@ -9,6 +9,6 @@ function Intro() {
       </p>
     </section>
   );
-}
+};
 
 export default Intro;
