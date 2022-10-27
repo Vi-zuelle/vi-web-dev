@@ -43,7 +43,7 @@ const MorePage = () => {
           ambiance.
         </p>
         <p>
-          I don't really know how to describe me, but it I have to do so, I
+          I don't really know how to describe me, but if I have to do so, I
           would go by my values. My fundamental values are : honesty,
           transparency, authenticity, kindness, attentiveness, fairness. I try
           my best to be all that!
