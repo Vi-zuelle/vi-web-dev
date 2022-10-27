@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  height: 180px;
+  height: $footer-h-sm;
   color: #fff;
 
   padding-top: 16px;
@@ -11,7 +11,8 @@ footer {
   right: 0;
   z-index: 999;
 
-  @include __MIN(lg) {
+  @include __MIN($footer-bp) {
+    height: $footer-h-xl;
     padding-top: 20px;
   }
 
@@ -19,6 +20,16 @@ footer {
     .contact__content {
       @include quickflex(column, center, center, nowrap);
     }
+
+    .contact__title {
+      margin: 0;
+
+      @include __MIN(lg) {
+        margin-top: 0.83rem;
+        margin-bottom: 0.83rem;
+      }
+    }
+
     .contact__links {
       @include quickflex(row, center, center, nowrap);
     }
@@ -26,6 +37,7 @@ footer {
     .contact__link {
       font-weight: 400;
       transition: transform 0.3s ease;
+      @include font-size-fluid(1.2rem, 1.5rem);
 
       &:hover {
         transform: scale(1.04);
@@ -37,11 +49,10 @@ footer {
   }
 
   .footer__message {
-    margin-top: 24px;
     @include quickflex(row, center, center, nowrap);
 
     p {
-      font-size: 1.5rem;
+      @include font-size-fluid(1.2rem, 1.5rem);
       font-weight: 400;
       font-style: italic;
     }
