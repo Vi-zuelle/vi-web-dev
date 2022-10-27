@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const MorePage = () => {
   useEffect(() => {
@@ -43,7 +44,7 @@ const MorePage = () => {
           ambiance.
         </p>
         <p>
-          I don't really know how to describe me, but if I have to do so, I
+          I don't really know how to describe myself, but if I have to do so, I
           would go by my values. My fundamental values are : honesty,
           transparency, authenticity, kindness, attentiveness, fairness. I try
           my best to be all that!
@@ -52,7 +53,12 @@ const MorePage = () => {
           Also I think I am kind of logic, curious, involved, team player,
           positive, autonomous, and creative.
         </p>
-        <p>You don't believe me? Let's talk!</p>
+        <p>
+          This seems to be a good fit?{" "}
+          <Link to="/contact-me" className="ext-link">
+            Let's talk!
+          </Link>
+        </p>
       </div>
 
       <div className="more__values">
