@@ -14,7 +14,7 @@ $bp: 700px;
     position: absolute;
     z-index: 9999;
     opacity: 0;
-    transition: all 0.35s ease;
+    transition: all 0.35s ease-in-out;
 
     ul {
       @include quickflex(column, flex-start, flex-start, nowrap);
@@ -30,6 +30,7 @@ $bp: 700px;
     .navbar {
       display: block;
       opacity: 1;
+      transition: all 0.35s ease-in-out;
     }
   }
 }
@@ -46,7 +47,7 @@ $bp: 700px;
   border-radius: 50%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   transform: scale(0);
-  transition: all 0.3s ease;
+  transition: all 0.4s ease-in-out;
 }
 
 .menu-overlay {
@@ -60,7 +61,7 @@ $bp: 700px;
   background: radial-gradient(circle, $dark, $dark);
   border-radius: 50%;
   transform: scale(0);
-  transition: all 0.3s ease;
+  transition: all 0.4s ease-in-out;
   box-shadow: 0 3px 10px rgb(255 255 255 / 0.2);
   border: 1px solid #fff;
 }
@@ -72,12 +73,14 @@ $bp: 700px;
     top: -100px;
     left: auto;
     right: -110px;
+    transition: all 0.4s ease-in-out;
   }
 
   .menu-overlay {
     transform: scale(1);
     top: -100px;
     left: -200px;
+    transition: all 0.4s ease-in-out;
   }
 }
 // -------------------- END Nav mobile background
@@ -97,7 +100,7 @@ $bp: 700px;
   background-color: #000;
   display: block;
   border-radius: 5px;
-  transition: 0.3s ease;
+  transition: 0.4s ease-in-out;
   position: relative;
   z-index: 9999;
 }

@@ -14,8 +14,14 @@ body {
 }
 
 .content {
+  position: relative;
+  z-index: 999;
   height: 100%;
-  padding-bottom: 200px;
+  padding-bottom: $footer-h-sm;
+
+  @include __MIN($footer-bp) {
+    padding-bottom: $footer-h-xl;
+  }
 }
 
 .container {
@@ -31,11 +37,6 @@ body {
 
 section {
   @include sct-margin;
-}
-
-.content {
-  position: relative;
-  z-index: 999;
 }
 
 h1 {
