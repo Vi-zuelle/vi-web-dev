@@ -17,7 +17,9 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Surprise! I left a console log in the code!");
+    console.log(
+      "Hello you, who are watching the console, maybe to see if there are any issues ;)"
+    );
 
     if (name && email && message) {
       // TODO - send mail

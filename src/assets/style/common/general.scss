@@ -21,7 +21,7 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: calc(100% - 20px);
+  width: calc(100% - 40px);
 
   @include __MIN(md) {
     width: 90%;
@@ -46,17 +46,17 @@ h1 {
 h2 {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 2rem;
+  @include font-size-fluid(1.6rem, 2rem);
 }
 
 h3 {
   font-weight: 400;
-  font-size: 1.6rem;
+  @include font-size-fluid(1.4rem, 1.6rem);
 }
 
 p,
 span {
-  font-size: 1.6rem;
+  @include font-size-fluid(1.4rem, 1.6rem);
 }
 
 // -------------------- Links

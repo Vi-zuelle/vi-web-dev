@@ -1,4 +1,4 @@
-function Stars() {
+const Stars = () => {
   const createStars = () => {
     let content = [];
     for (let i = 1; i < 100; i++) {
@@ -18,6 +18,6 @@ function Stars() {
   };
 
   return <div>{createStars()}</div>;
-}
+};
 
 export default Stars;

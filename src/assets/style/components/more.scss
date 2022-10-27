@@ -1,17 +1,24 @@
 body.more-layout {
-  .App {
-    background: linear-gradient(
-      0deg,
-      rgba(183, 231, 251, 1) 0%,
-      rgba(183, 231, 251, 1) 80%,
-      rgba(249, 203, 64, 0.6) 100%
-    );
-    position: fixed;
-    top: 0;
+  background-color: $dark;
+  background-image: url("../../img/antonino-visalli-iI1SSTbW218-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .content {
+    color: #fff;
   }
+
   .footer {
     position: fixed;
     bottom: 0;
+    color: $text;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.4) 90%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
 }
 
@@ -19,27 +26,40 @@ body.more-layout {
   position: relative;
   height: 100%;
 
+  .more__content {
+    width: 50%;
+    min-width: 320px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    @include sct-margin;
+
+    @include __MIN(sm) {
+      background: none;
+      padding: 0;
+    }
+  }
+
+  // ------------------ Bubbles
+  // Inspired from Mark Bowley @ https://codepen.io/Mark_Bowley/pen/PozwyP
+
   .more__values {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 0;
   }
 
   .more__value-wrapper {
     width: 100%;
     position: absolute;
-    height: 100%;
+    // height: 100%;
   }
 
   .more__value__text {
     width: 100px;
     height: 100px;
   }
-
-  // ------------------ Bubbles
-  // Inspired from Mark Bowley @ https://codepen.io/Mark_Bowley/pen/PozwyP
 
   .bubble {
     background: radial-gradient(

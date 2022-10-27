@@ -5,9 +5,9 @@ import Home from "./pages/Home";
 import MorePage from "./pages/More";
 import ContactPage from "./pages/Contact";
 
-import "./assets/style/App.scss";
+import "./assets/style/components/App.scss";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
@@ -21,6 +21,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

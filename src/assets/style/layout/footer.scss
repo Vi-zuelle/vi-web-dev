@@ -1,13 +1,10 @@
 footer {
   width: 100%;
+  height: 180px;
   color: #fff;
-  background-image: url("../img/jacques-cartier.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   padding-top: 16px;
   padding-bottom: 16px;
-  // position: relative;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,18 +12,11 @@ footer {
   z-index: 999;
 
   @include __MIN(lg) {
-    padding-top: 32px;
-    // padding-bottom: 32px;
-  }
-
-  @include __MIN(xl) {
-    padding-top: 40px;
-    // padding-bottom: 40px;
+    padding-top: 20px;
   }
 
   .footer__contact {
     .contact__content {
-      // color: #fff;
       @include quickflex(column, center, center, nowrap);
     }
     .contact__links {
@@ -34,6 +24,12 @@ footer {
     }
 
     .contact__link {
+      font-weight: 400;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.04);
+      }
       &:not(:last-child) {
         margin-right: 1.4rem;
       }
@@ -58,4 +54,11 @@ footer {
       background-color: $secondary;
     }
   }
+}
+
+body:not(.contact-layout):not(.more-layout) footer {
+  background-image: url("../../img/jacques-cartier.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

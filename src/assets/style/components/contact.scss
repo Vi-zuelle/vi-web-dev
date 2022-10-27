@@ -1,5 +1,18 @@
 body.contact-layout {
   background-color: $dark;
+  color: #fff;
+  background-image: url("../../img/alexis-antonio-wGpUYzBqW20-unsplash90deg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .nav-mobile {
+    color: $text;
+  }
+
+  .bar {
+    background-color: #fff;
+  }
 
   .nav-desktop .link-wrapper {
     @include link-wrapper(#fff);
@@ -8,19 +21,29 @@ body.contact-layout {
   .header .logo-wrapper .logo {
     fill: #fff;
   }
+
+  .contact__link.email {
+    display: none;
+  }
+
+  footer .footer__contact .contact__link.github {
+    margin-right: 0;
+  }
 }
 
 .contact {
   @include sct-margin;
   @include quickflex(column, center, flex-start, nowrap);
-  text-align: center;
 
   .contact__text {
+    text-align: left;
     color: #fff;
+    margin-bottom: 100px;
 
     p {
       font-style: italic;
       font-size: 1.4rem;
+      width: 200px;
     }
   }
 
@@ -58,11 +81,6 @@ body.contact-layout {
   .contact-form__msg {
     min-height: 56px;
     font-family: "Mulish", sans-serif;
-  }
-
-  input::placeholder,
-  input::-webkit-input-placeholder {
-    // font-family: "Mulish", sans-serif;
   }
 
   .contact-form__btn {

@@ -1,4 +1,4 @@
-function Skills() {
+const Skills = () => {
   return (
     <section className="container skills" id="skills">
       <h2>_skills</h2>
@@ -9,6 +9,6 @@ function Skills() {
       </p>
     </section>
   );
-}
+};
 
 export default Skills;

@@ -1,21 +1,21 @@
 // -------------------- Variables
-@import "./smart-variables.scss";
+@import "./common/smart-variables.scss";
 // -------------------- Mixins & functions
-@import "./functions.scss";
-@import "./mixins.scss";
+@import "./common/functions.scss";
+@import "./common/mixins.scss";
 // -------------------- Common
-@import "./reset.scss";
-@import "./fonts.scss";
-@import "./colors.scss";
-@import "./general.scss";
-@import "./star.scss";
-// -------------------- Pages & sections
-@import "./index.scss";
-@import "./App.scss";
-@import "./home.scss";
-@import "./header.scss";
-@import "./nav.scss";
-@import "./technicals.scss";
-@import "./contact.scss";
-@import "./footer.scss";
-@import "./more.scss";
+@import "./common/reset.scss";
+@import "./common/fonts.scss";
+@import "./common/colors.scss";
+@import "./common/general.scss";
+// -------------------- Layout
+@import "./layout/footer.scss";
+@import "./layout/header.scss";
+@import "./layout/nav.scss";
+// -------------------- Pages & components
+@import "./components/star.scss";
+@import "./components/App.scss";
+@import "./components/home.scss";
+@import "./components/technicals.scss";
+@import "./components/contact.scss";
+@import "./components/more.scss";

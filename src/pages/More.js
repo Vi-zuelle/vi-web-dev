@@ -49,22 +49,6 @@ const MorePage = () => {
           <div className="bubble x9">positive</div>
           <div className="bubble x10">autonomous</div>
         </div>
-
-        {/* <div className="bubble--text x1 more__value-wrapper">
-          <div className="more__value__text">Curious</div>
-        </div>
-
-        <div className="more__value-wrapper">
-          <div className="more__value__text">Benevolent</div>
-        </div>
-
-        <div className="more__value-wrapper">
-          <div className="more__value__text">Curious</div>
-        </div>
-
-        <div className="more__value-wrapper">
-          <div className="more__value__text">Curious</div>
-        </div> */}
       </div>
     </div>
   );
