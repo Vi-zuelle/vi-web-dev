@@ -19,7 +19,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-size: $size;
   background-position: 0 0;
-  animation: bg-anim 600s linear infinite;
+  animation: bg-anim 100s linear infinite;
 }
 
 @keyframes bg-anim {
