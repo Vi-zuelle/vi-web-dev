@@ -8,10 +8,22 @@ const Footer = () => {
           <h2 className="contact__title">_Contact</h2>
           <div className="contact__links">
             <span className="contact__link linkedin">
-              <a href="https://www.linkedin.com/in/vipannetier/">linkedin</a>
+              <a
+                href="https://www.linkedin.com/in/vipannetier/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                linkedin
+              </a>
             </span>
             <span className="contact__link github">
-              <a href="https://github.com/Vi-zuelle">github</a>
+              <a
+                href="https://github.com/Vi-zuelle"
+                target="_blank"
+                rel="noreferrer"
+              >
+                github
+              </a>
             </span>
             <span className="contact__link email">
               <Link to="/contact-me">email</Link>
