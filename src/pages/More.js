@@ -19,7 +19,7 @@ const MorePage = () => {
         </p>
         <p>
           I started my "real" work life as a data analyst until I decided to own
-          the geek part of me. That is how, end of 2019 I had been through a
+          the geek part of myself. That is how, end of 2019 I had been through a
           coding bootcamp of 9 intensive and wonderful weeks &#64; &nbsp;
           <a
             href="https://www.lewagon.com/montreal"
@@ -29,7 +29,7 @@ const MorePage = () => {
           >
             Le&nbsp;Wagon
           </a>
-          . (If you find me on the picture, I owe you a free hug) In 2020 I got
+          . (If you find me on the picture, I owe you a free hug). In 2020 I got
           small jobs there and there. Until I got hired in March 2021 &#64;
           &nbsp;
           <a
@@ -42,6 +42,13 @@ const MorePage = () => {
           </a>
           . Since then, I live a great life with amazing colleagues in a family
           ambiance.
+        </p>
+        <p>
+          In the meantime, I have been expressing my creativity by experimenting
+          many things, like video editing, DJing, painting, for example. I also
+          spend most of my time into self improvements through meditation,
+          workshops, conferences. I do love music and dancing. How to tell you
+          that I never get bored!
         </p>
         <p>
           I don't really know how to describe myself, but if I have to do so, I
