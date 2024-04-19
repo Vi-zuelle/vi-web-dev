@@ -5,7 +5,7 @@ const Experience = () => {
       <h3>Frontend web developer @ Vortex Solution | Mar 2021 – now</h3>
       <p>
         Development of full custom websites with WordPress CMS and ACF Pro
-        (Advanced Custom Fields), PHP, Sass, JS, HTML5, npm, GitLab.
+        (Advanced Custom Fields), PHP, Sass, JS, HTML5, npm, Github, React.
       </p>
       <h3>Freelance | Mai 2020 – Mar 2021</h3>
       <p>

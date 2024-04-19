@@ -4,8 +4,8 @@
   width: 1px;
   height: 1px;
   border-radius: 50%;
-  background-color: $primary;
-  box-shadow: 0px 0px 2px 2px $primary; /* x offset, y offset, blur size, spread size, color */
+  background-color: $highlights;
+  box-shadow: 0px 0px 2px 2px $highlights; /* x offset, y offset, blur size, spread size, color */
   animation: scale 6s ease-in-out infinite;
 
   @keyframes scale {
@@ -25,8 +25,8 @@
 
   &:nth-child(2n) {
     animation: scale 7s ease-in-out infinite;
-    background-color: $secondary;
-    box-shadow: 0px 0px 2px 2px $secondary; /* x offset, y offset, blur size, spread size, color */
+    background-color: $highlights;
+    box-shadow: 0px 0px 2px 2px $highlights; /* x offset, y offset, blur size, spread size, color */
   }
 
   &:nth-child(3n) {
