@@ -29,9 +29,8 @@ const MorePage = () => {
           >
             Le&nbsp;Wagon
           </a>
-          . (If you find me on the picture, I owe you a free hug). In 2020 I got
-          small jobs there and there. Until I got hired in March 2021 &#64;
-          &nbsp;
+          . In 2020 I got small jobs there and there. Until I got hired in March
+          2021 &#64; &nbsp;
           <a
             href="https://www.vortexsolution.com/en/"
             target="_blank"
@@ -53,8 +52,7 @@ const MorePage = () => {
         <p>
           I don't really know how to describe myself, but if I have to do so, I
           would go by my values. My fundamental values are : honesty,
-          transparency, authenticity, kindness, attentiveness, fairness. I try
-          my best to be all that!
+          transparency, authenticity, kindness, attentiveness, fairness.
         </p>
         <p>
           Also I think I am kind of logic, curious, involved, team player,
