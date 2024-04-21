@@ -166,7 +166,7 @@
 }
 
 // -------------------- Links
-@mixin link-wrapper($bg-color: $text) {
+@mixin link-wrapper($bg-color: $text, $hover-color: #fff) {
   position: relative;
   z-index: 9;
 
@@ -184,7 +184,7 @@
   &:hover,
   &:focus {
     > a {
-      filter: invert(1);
+      color: $hover-color;
     }
   }
 
@@ -216,7 +216,6 @@
   position: relative;
   z-index: 9;
   padding: 12px 24px;
-  // border-radius: 2px;
   overflow: hidden;
   cursor: pointer;
   border: none;

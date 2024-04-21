@@ -1,43 +1,43 @@
-// .star {
-//   position: fixed;
-//   z-index: 0;
-//   width: 1px;
-//   height: 1px;
-//   border-radius: 50%;
-//   background-color: $highlights;
-//   box-shadow: 0px 0px 2px 2px $highlights; /* x offset, y offset, blur size, spread size, color */
-//   animation: scale 6s ease-in-out infinite;
+.star {
+  position: fixed;
+  z-index: 0;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: $highlights;
+  box-shadow: 0px 0px 2px 2px $highlights; /* x offset, y offset, blur size, spread size, color */
+  animation: scale 6s ease-in-out infinite;
 
-//   @keyframes scale {
-//     0% {
-//       transform: scale(0.1);
-//     }
-//     50% {
-//       transform: scale(0.5);
-//     }
-//     80% {
-//       transform: scale(1);
-//     }
-//     100% {
-//       transform: scale(0.1);
-//     }
-//   }
+  @keyframes scale {
+    0% {
+      transform: scale(0.1);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+    80% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.1);
+    }
+  }
 
-//   &:nth-child(2n) {
-//     animation: scale 7s ease-in-out infinite;
-//     background-color: $highlights;
-//     box-shadow: 0px 0px 2px 2px $highlights; /* x offset, y offset, blur size, spread size, color */
-//   }
+  &:nth-child(2n) {
+    animation: scale 7s ease-in-out infinite;
+    background-color: $highlights;
+    box-shadow: 0px 0px 2px 2px $highlights; /* x offset, y offset, blur size, spread size, color */
+  }
 
-//   &:nth-child(3n) {
-//     background-color: $primary;
-//     box-shadow: 0px 0px 1px 1px $primary; /* x offset, y offset, blur size, spread size, color */
-//     animation: scale 8s ease-in-out infinite;
-//   }
+  &:nth-child(3n) {
+    background-color: $primary;
+    box-shadow: 0px 0px 1px 1px $primary; /* x offset, y offset, blur size, spread size, color */
+    animation: scale 8s ease-in-out infinite;
+  }
 
-//   &:nth-child(5n) {
-//     background-color: $secondary;
-//     box-shadow: 0px 0px 1px 1px $secondary; /* x offset, y offset, blur size, spread size, color */
-//     animation: scale 9s ease-in-out infinite;
-//   }
-// }
+  &:nth-child(5n) {
+    background-color: $secondary;
+    box-shadow: 0px 0px 1px 1px $secondary; /* x offset, y offset, blur size, spread size, color */
+    animation: scale 9s ease-in-out infinite;
+  }
+}
