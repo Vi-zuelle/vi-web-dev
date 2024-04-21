@@ -1,13 +1,13 @@
 body.contact-layout {
-  background-color: #000;
-  color: #fff;
-  background-image: url("../../img/quaritsch-photograph.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-color: #000;
+  // color: #fff;
+  // background-image: url("../../img/quaritsch-photograph.jpg");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 
   .nav-mobile {
-    color: $text;
+    color: $primary;
   }
 
   .bar {
@@ -15,11 +15,11 @@ body.contact-layout {
   }
 
   .nav-desktop .link-wrapper {
-    @include link-wrapper(#fff);
+    @include link-wrapper($primary);
   }
 
   .header .logo-wrapper .logo {
-    fill: #fff;
+    // fill: #fff;
   }
 
   .contact__link.email {
@@ -31,13 +31,15 @@ body.contact-layout {
   }
 }
 
+// -------------------- CONTACT
+
 .contact {
   @include sct-margin;
   @include quickflex(column, center, flex-start, nowrap);
 
   .contact__text {
     text-align: left;
-    color: #fff;
+    // color: #fff;
     margin-bottom: 100px;
 
     p {
@@ -54,6 +56,11 @@ body.contact-layout {
     @include sct-margin-sm;
     position: relative;
     z-index: 99;
+    // padding: 400px;
+    // background-image: url("../../img/quaritsch-photograph.jpg");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
 
     @include __MIN(lg) {
       max-width: 50vw;
@@ -85,6 +92,13 @@ body.contact-layout {
 
   .contact-form__btn {
     margin-top: 16px;
+    @include btn(
+      $color: #000,
+      $bg-color: #fff,
+      $border: $primary,
+      $color-hover: #fff,
+      $bg-color-hover: $primary
+    )
   }
 
   .contact-form__confirmation-wrapper {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
-import Stars from "../components/layout/Stars";
+import Stars from "../components/layout/Fireworks";
 
 const ContactPage = () => {
   const [name, setName] = useState("");
